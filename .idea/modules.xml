@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/oop-patterns.iml" filepath="$PROJECT_DIR$/oop-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sem7-oop-Decorators.iml" filepath="$PROJECT_DIR$/Sem7-oop-Decorators.iml" />
     </modules>
   </component>
 </project>

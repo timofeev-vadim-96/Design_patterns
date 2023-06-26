@@ -1,5 +1,7 @@
 package decorator.factory.calculator;
 
+import decorator.factory.calculator.factory.impl.ICalculableFactory;
+
 import java.util.Scanner;
 
 public class CalculatorView {
@@ -11,27 +13,27 @@ public class CalculatorView {
 
     public void run() {
         while (true) {
-            int primaryArg = promptInt("¬ведите первый аргумент: ");
+            int primaryArg = promptInt("??????? ?????? ????????: ");
             Calculable calculator = calculableFactory.create(primaryArg);
             while (true) {
-                String cmd = prompt("¬ведите команду (*, +, =) : ");
+                String cmd = prompt("??????? ??????? (*, +, =) : ");
                 if (cmd.equals("*")) {
-                    int arg = promptInt("¬ведите второй аргумент: ");
+                    int arg = promptInt("??????? ?????? ????????: ");
                     calculator.multi(arg);
                     continue;
                 }
                 if (cmd.equals("+")) {
-                    int arg = promptInt("¬ведите второй аргумент: ");
+                    int arg = promptInt("??????? ?????? ????????: ");
                     calculator.sum(arg);
                     continue;
                 }
                 if (cmd.equals("=")) {
                     int result = calculator.getResult();
-                    System.out.printf("–езультат %d\n", result);
+                    System.out.printf("????????? %d\n", result);
                     break;
                 }
             }
-            String cmd = prompt("≈ще посчитать (Y/N)?");
+            String cmd = prompt("??? ????????? (Y/N)?");
             if (cmd.equals("Y")) {
                 continue;
             }

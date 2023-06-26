@@ -14,4 +14,9 @@ public class Bike implements Item {
     public Characteristic getCharacteristic() {
         return characteristic;
     }
+
+    public void getInfo() {
+        System.out.printf("%s. Characteristics: \n", this.getClass().getSimpleName());
+        this.characteristic.getInfo();
+    }
 }
